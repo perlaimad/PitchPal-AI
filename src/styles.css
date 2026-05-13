@@ -977,7 +977,8 @@ td small { display: block; color: var(--hint); }
 .sdgLogoTile {
   display: grid;
   min-height: 136px;
-  align-content: space-between;
+  align-content: center;
+  justify-items: center;
   gap: 8px;
   border: 2px solid transparent;
   border-radius: 8px;
@@ -985,7 +986,7 @@ td small { display: block; color: var(--hint); }
   color: white;
   cursor: pointer;
   padding: 12px;
-  text-align: left;
+  text-align: center;
   transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;
 }
 .sdgLogoTile:hover,
@@ -1000,10 +1001,15 @@ td small { display: block; color: var(--hint); }
   line-height: 1;
 }
 .sdgLogoTile strong {
-  min-height: 42px;
+  display: grid;
+  place-items: center;
+  min-height: 52px;
+  max-width: 100%;
   font-size: 15px;
   line-height: 1.18;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
 }
 .sdgLogoTile small {
   color: rgba(255, 255, 255, .82);
@@ -1032,12 +1038,15 @@ td small { display: block; color: var(--hint); }
 }
 .sdgEmblem {
   display: grid;
-  align-content: space-between;
+  align-content: center;
+  justify-items: center;
+  gap: 16px;
   min-height: 132px;
   padding: 14px;
   border-radius: 8px;
   background: var(--sdg-color);
   color: white;
+  text-align: center;
 }
 .sdgEmblem span {
   font-family: "DM Serif Display", Georgia, serif;
@@ -1045,9 +1054,12 @@ td small { display: block; color: var(--hint); }
   line-height: 1;
 }
 .sdgEmblem strong {
+  max-width: 100%;
   font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
 }
 .sdgDetailHeader h3 {
   margin: 5px 0 8px;
